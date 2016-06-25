@@ -2,7 +2,7 @@
 This repository is for my submission to Project 1 of Udacity's Machine Learning 
 Nano Degree. 
 
-[CLICK HERE](https://ronrest.github.io/udacity_mlnd_projects/p1_boston_housing/boston_housing_report_ronny_restrepo.html): to view the final report. 
+[CLICK HERE](https://ronrest.github.io/udacity_mlnd_projects/p1_boston_housing/boston_housing_report.html): to view the final report. 
 
 ## Contents of this repository
 
