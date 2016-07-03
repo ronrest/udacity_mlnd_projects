@@ -101,6 +101,8 @@ code{
 
 .flip_meta_container{
     padding-bottom: 40px;
+    display: inline-block;
+    margin: 5px;
 }
 
 .card .front, .card .back {
