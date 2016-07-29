@@ -1,32 +1,17 @@
-# Project 3: Unsupervised Learning
-## Creating Customer Segments
+# Project 3: Creating Customer Segments
+This repository is for my submission to Project 3 of Udacity's Machine Learning 
+Nano Degree. 
 
-### Install
+[CLICK HERE](https://ronrest.github.io/udacity_mlnd_projects/p3_customer_segments/customer_segments.html): to view the rendered html document with my solutions. 
 
-This project requires **Python 2.7** and the following Python libraries installed:
+## Contents of this repository
 
-- [NumPy](http://www.numpy.org/)
-- [Pandas](http://pandas.pydata.org)
-- [matplotlib](http://matplotlib.org/)
-- [scikit-learn](http://scikit-learn.org/stable/)
+This repository contains the following files: 
 
-You will also need to have software installed to run and execute an [iPython Notebook](http://ipython.org/notebook.html)
+- **customer_segments.ipynb**: The iPython notebook containing the project description, and all the questions and worked solutions. 
+- **customer_segments.html**: The exported notebook as an html page. 
+- **renders.py**: Visualisation functions provided as supplementary code by the class. 
+- **customers.csv**: The spending data of the clients used for this report. 
+- **custom.css**: Custom css stylesheet to make the exported html report more readable and pretty. 
+- **README.md**: This page
 
-Udacity recommends our students install [Anaconda](https://www.continuum.io/downloads), a pre-packaged Python distribution that contains all of the necessary libraries and software for this project. 
-
-### Code
-
-Template code is provided in the notebook `customer_segments.ipynb` notebook file. Additional supporting code can be found in `renders.py`. While some code has already been implemented to get you started, you will need to implement additional functionality when requested to successfully complete the project.
-
-### Run
-
-In a terminal or command window, navigate to the top-level project directory `creating_customer_segments/` (that contains this README) and run one of the following commands:
-
-```ipython notebook customer_segments.ipynb```
-```jupyter notebook customer_segments.ipynb```
-
-This will open the iPython Notebook software and project file in your browser.
-
-## Data
-
-The dataset used in this project is included as `customers.csv`. You can find more information on this dataset on the [UCI Machine Learning Repository](https://archive.ics.uci.edu/ml/datasets/Wholesale+customers) page.
