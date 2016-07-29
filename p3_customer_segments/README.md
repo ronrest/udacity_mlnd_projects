@@ -1,6 +1,18 @@
 # Project 3: Creating Customer Segments
-This repository is for my submission to Project 3 of Udacity's Machine Learning 
-Nano Degree. 
+
+A wholesale distributor recently tested a change to their delivery method for
+some customers, by moving from a morning delivery service five days a week to a
+cheaper evening delivery service three days a week.Initial testing did not
+discover any significant unsatisfactory results, so they implemented the cheaper
+option for all customers. Almost immediately, the distributor began getting
+complaints about the delivery service change and customers were canceling
+deliveries — losing the distributor more money than what was being saved. 
+
+The purpose of this project is to find what types of customers
+they have to help them make better, more informed business decisions in the
+future. This is to be done using unsupervised learning techniques to see if any
+similarities exist between customers, and how to best segment customers into
+distinct categories.
 
 [CLICK HERE](https://ronrest.github.io/udacity_mlnd_projects/p3_customer_segments/customer_segments.html): to view the rendered html document with my solutions. 
 
