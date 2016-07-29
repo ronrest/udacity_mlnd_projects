@@ -45,7 +45,7 @@ p{
 
 
 .container{
-    width: 55em;
+    width: 60em;
     padding: 40px;
 }
 
@@ -173,7 +173,7 @@ td {
   text-align:left;
   vertical-align:middle;
   font-weight:300;
-  font-size:1em;
+  font-size:0.9em;
   border-right: 1px solid #C1C3D1;
 }
 
