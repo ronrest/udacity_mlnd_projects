@@ -11,10 +11,59 @@ import sklearn.learning_curve as curves
 from sklearn.tree import DecisionTreeRegressor
 from sklearn.cross_validation import ShuffleSplit, train_test_split
 
+
 #===============================================================================
 #                                SCATTER PLOTS TO EXPLORE POTENTIAL CORRELATIONS
 #===============================================================================
 def feature_scatterplots(features, prices):
+    """
+    Takes a dataframe `features` which contains the following columns
+        "RM", "LSTAT", "PTRATIO"
+    And also takes an array-like object containing the output prices values 
+    for each row of the features dataframe. 
+    
+    prints out a grid of scatter plots showing the relationship between each 
+    feature and the output price. 
+    """
+    # Labels for each plot
+    feature_names = ["RM", "LSTAT", "PTRATIO"]
+    x_labels = ["average number of rooms per dwelling", 
+                "% lower status of the population",
+                "pupil-teacher ratio by town"]
+    y_label = "Median value of owner-occupied homes"
+
+    # Create grid of subplots
+    fig, axes = pl.subplots(2, 2, figsize=(10, 10), sharey=True)
+
+    # Flatten axes to a flat list to iterate over axes more easily
+    axes = [axis for sublist in axes for axis in sublist][:3]
+
+    # PLOT
+    fig.suptitle('Median Value of House as a Function of Features', fontsize=15)
+    for feature_name, label, axis in zip(feature_names, x_labels, axes):
+        # Scatter plot
+        axis.scatter(features[feature_name], prices, 
+                     c="#319fe5", s=100, alpha=0.7, linewidths=0)
+        
+        # Linear trend
+        slope, intercept = np.polyfit(features[feature_name], prices, deg=1)
+        axis.plot(features[feature_name], 
+                  slope * features[feature_name] + intercept, 
+                  color='#FF4F40', linewidth=2) 
+        
+        # Labels
+        axis.set_title(feature_name)
+        axis.set_xlabel(label)
+        axis.set_ylabel(y_label)
+
+    # Add some spacing so x-axis labels and subplot titles do not overlap
+    fig.subplots_adjust(hspace=0.4)
+
+
+#===============================================================================
+#                                SCATTER PLOTS TO EXPLORE POTENTIAL CORRELATIONS
+#===============================================================================
+def feature_scatterplotsOLD(features, prices):
     """
     Takes a dataframe `features` which contains the following columns
         "RM", "LSTAT", "PTRATIO"
